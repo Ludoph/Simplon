@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rozenssa');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-with-moon-sky_1340-32087.jpg?w=1060&t=st=1682439879~exp=1682440479~hmac=42e284eaeffe1f1e8c2798768718af0354a59f84f73c3ae7693b6166fe637495");
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-family: 'Italiana', serif;
+}
+/* ======================================================== */
+/* ======================================================== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(161, 180, 184, 0.5);
+    margin-bottom: 60px;
+}
+header .titre {
+    margin: 10px 60px;
+}
+header .titre p{
+    font-size: 60px;
+    font-family: 'Rozenssa', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+header .menu{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+header .menu a{
+    font-size: 40px;
+    margin-left: 30px;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+header .menu a:hover{
+    color: rgb(223, 223, 223);
+    transform: scale(1.2);
+}
+header .menu a:active,
+header .menu a:visited{
+    text-decoration: none;
+}
+@media (max-width: 650px) {
+    header .titre {
+        font-size: 40px;
+    }
+}
+/* ======================================================== */
+/* ======================================================== */
+
+main .element-formulaire{
+    background-color: rgba(161, 180, 184, 0.5);
+    margin: 0 10%;
+    padding: 20px 2%;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+main .element-formulaire hr {
+    margin: 0 30%;
+}
+main .element-formulaire label {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+main .element-formulaire input {
+    max-width: 240px;
+    opacity: 50%;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    /* transition: 2s ease-in-out; */
+    transition: transform 0.35s;
+}
+main .element-formulaire input:hover {
+    opacity: 70%;
+    transform: scale(1.05);
+}
+::placeholder {
+    text-align: center;
+}
+main .element-formulaire input[type="date"] {
+    text-align: center;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+}
+main .element-formulaire  input[type="radio"] {
+    margin-right: 20px;
+}
+main .element-formulaire select{
+    opacity: 50%;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    transition: transform 0.35s;
+}
+main .element-formulaire select:hover {
+    opacity: 70%;
+    transform: scale(1.05);
+}
+main .element-formulaire .identite,
+main .element-formulaire .contact,
+main .element-formulaire .infosup,
+main .element-formulaire .plus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+main .element-formulaire .block1 {
+    grid-area: 1 / 1 / 5 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5% 20%;
+}
+main .element-formulaire .block2 {
+    grid-area: 1 / 2 / 5 / 3; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5% 20%;
+}
+
+main .element-formulaire .button-envoyer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    transition: letter-spacing 0.3s, background-color 0.3s;
+}
+main .element-formulaire .button-envoyer:hover{
+    letter-spacing: 2px;
+    background-color: rgb(189, 207, 215);
+}
+button i {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+@media (max-width: 1050px) {
+    main .element-formulaire{
+        margin: 0 10%;
+    }
+    main .element-formulaire input {
+        max-width: 600px;
+    }
+    main .element-formulaire select {
+        max-width: 600px;
+        width: auto;
+    }
+    main .element-formulaire .identite,
+    main .element-formulaire .contact,
+    main .element-formulaire .infosup,
+    main .element-formulaire .plus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 10%;
+    }
+    main .element-formulaire label {
+        font-size: 16px;
+    }
+}
+@media (max-width: 650px) {
+    main .element-formulaire{
+        margin: 0 10%;
+        max-width: 100%;
+    }
+    main .element-formulaire label {
+        font-size: 16px;
+    }
+    main .element-formulaire input {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    main .element-formulaire select {
+        display: flex;
+        justify-content: center;
+        max-width: none;
+        width: auto;
+    }
+}
+
+
+
+.skillsfront,
+.skillsback {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 12px;
+}
+
+fieldset {
+    border: none;
+}
+legend {
+    font-size: 22px;
+}

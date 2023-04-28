@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rozenssa');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-with-moon-sky_1340-32087.jpg?w=1060&t=st=1682439879~exp=1682440479~hmac=42e284eaeffe1f1e8c2798768718af0354a59f84f73c3ae7693b6166fe637495");
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-family: 'Italiana', serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.264);
+    margin-bottom: 60px;
+}
+header .logo{
+    margin: 10px 60px;
+}
+header .logo p{
+    font-size: 60px;
+    font-family: 'Rozenssa', sans-serif;
+}
+header .menu{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+header .menu a{
+    font-size: 40px;
+    margin-left: 30px;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+header .menu a:hover{
+    color: rgb(223, 223, 223);
+    transform: scale(1.2);
+}
+header .menu a:active,
+header .menu a:visited{
+    text-decoration: none;
+}
+
+
+
+
